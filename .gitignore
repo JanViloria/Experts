@@ -1,5 +1,32 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,windows,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,windows,macos
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,firebase
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,node,firebase
+
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
+
+### Firestore key ###
+experts-51d7f-7c6552077fa4.json
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### macOS ###
 # General
@@ -186,4 +213,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,windows,macos
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,firebase
