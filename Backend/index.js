@@ -5,18 +5,14 @@ const db = require('./src/db/crud.js')
 
 app.use(express.static('public'));
 
-app.get('/', function (req, res) {
-    res.send('Mi primer servidor en express')
+app.get('./', function (req, res){
+    res.send('Bienvenidos al servidor de Experts')
 });
 
-app.get('/nueva_ruta', function (req, res){
-    res.send('Mi primera ruta en express');
-});
-   
-app.get('/ciudades', function(req, res){
-    res.json({
-        "ciudad1": "Bogotá",
-        "ciudad2": "Barranquilla"
+app.get('/get_experts', function (req, res) {
+    db.getExperts(function(arrayExperts){
+        res.send(arrayExperts);
     })
-})
+});
+
 app.listen(3000);
