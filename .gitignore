@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,firebase
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,node,firebase
+
+# Created by https://www.toptal.com/developers/gitignore/api/firebase,node,windows,macos,linux,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=firebase,node,windows,macos,linux,react
 
 ### Firebase ###
 .idea
@@ -187,6 +188,19 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -213,4 +227,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,firebase
+# End of https://www.toptal.com/developers/gitignore/api/firebase,node,windows,macos,linux,react
