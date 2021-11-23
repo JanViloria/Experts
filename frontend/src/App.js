@@ -1,9 +1,10 @@
 
+import ButtonClose from "./components/ButtonClose";
 
 function App() {
   return (
-    <div className="App">
-     
+    <div>
+     <ButtonClose/>
     </div>
   );
 }
